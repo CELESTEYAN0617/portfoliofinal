@@ -11,7 +11,8 @@ const Footer: React.FC = () => {
     setSubmitStatus('idle');
 
     try {
-      const response = await fetch('/api/newsletter/subscribe', {
+      console.log('Sending newsletter subscription request with email:', email);
+      const response = await fetch('http://localhost:5002/api/newsletter/subscribe', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -19,15 +20,18 @@ const Footer: React.FC = () => {
         body: JSON.stringify({ email }),
       });
 
+      console.log('Response status:', response.status);
+      const data = await response.json();
+      console.log('Response data:', data);
+
       if (!response.ok) {
-        const data = await response.json();
         throw new Error(data.message || 'Failed to subscribe');
       }
 
       setSubmitStatus('success');
       setEmail('');
     } catch (error) {
-      console.error('Error:', error);
+      console.error('Error details:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
