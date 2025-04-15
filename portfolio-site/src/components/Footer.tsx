@@ -12,7 +12,8 @@ const Footer: React.FC = () => {
 
     try {
       console.log('Sending newsletter subscription request with email:', email);
-      const response = await fetch('http://localhost:5002/api/newsletter/subscribe', {
+      const baseUrl = process.env.NODE_ENV === 'production' ? '' : 'http://localhost:5002';
+      const response = await fetch(`${baseUrl}/api/newsletter/subscribe`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -13,7 +13,9 @@ const app = express();
 
 // middleware
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: process.env.NODE_ENV === 'production' 
+    ? ['https://your-render-app-url.onrender.com', 'https://www.your-domain.com']
+    : 'http://localhost:3000',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,

@@ -25,7 +25,8 @@ const ContactPage: React.FC = () => {
 
     try {
       console.log('Sending request with data:', formData);
-      const response = await fetch('http://localhost:5002/api/contact', {
+      const baseUrl = process.env.NODE_ENV === 'production' ? '' : 'http://localhost:5002';
+      const response = await fetch(`${baseUrl}/api/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
