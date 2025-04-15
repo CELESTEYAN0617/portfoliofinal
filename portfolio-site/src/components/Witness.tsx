@@ -142,17 +142,13 @@ const Witness: React.FC = () => {
             variants={itemVariants}
             className="w-full aspect-video rounded-lg overflow-hidden shadow-2xl border-2 border-[#F0584E]/20"
           >
-            <video 
-              className="w-full h-full object-cover"
-              controls
-              autoPlay
-              muted
-              loop
-              playsInline
-            >
-              <source src="/witness.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/9o9zZP1ZsTY"
+              title="Witness Demo Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           </motion.div>
         </motion.div>
       </motion.section>
