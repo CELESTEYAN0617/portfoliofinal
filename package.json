@@ -5,8 +5,9 @@
   "main": "backend/server.js",
   "scripts": {
     "start": "node backend/server.js",
-    "build": "cd portfolio-site && npm run build",
+    "build": "cd portfolio-site && chmod +x node_modules/.bin/react-scripts && npm run build",
     "install-all": "npm install && cd backend && npm install && cd ../portfolio-site && npm install",
+    "postinstall": "npm run install-all",
     "dev": "cd portfolio-site && npm start",
     "start-dev-api": "cd backend && node server.js",
     "build-and-start": "npm run build && npm start",
