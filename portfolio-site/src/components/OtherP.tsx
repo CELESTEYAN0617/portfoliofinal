@@ -35,13 +35,13 @@ const OtherP: React.FC = () => {
         </div>
 
         <motion.h1
-          className="relative z-10 text-[30vw] sm:text-[25vw] md:text-[20vw] lg:text-[15vw] font-serif font-bold text-right mt-[35vh] md:mt-[15vh] pr-[5vw] whitespace-nowrap"
+          className="relative z-10 text-[35vw] sm:text-[30vw] md:text-[25vw] lg:text-[20vw] font-serif font-bold text-right mt-[65vh] md:mt-[45vh] pr-[5vw] whitespace-nowrap"
           style={{ x: xSpring }}
         >
           PROJECTS
         </motion.h1>
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="absolute top-[20vh] w-full overflow-hidden">
+          <div className="absolute top-[28vh] w-full overflow-hidden">
             <motion.div 
               className="whitespace-nowrap"
               initial={{ x: "100%" }}
@@ -52,7 +52,7 @@ const OtherP: React.FC = () => {
                 ease: "linear"
               }}
             >
-              <span className="text-sm sm:text-base md:text-lg text-gray-600 italic">A collection of my creative works spanning branding, web games, and interactive experiences&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;A collection of my creative works spanning branding, web games, and interactive experiences&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</span>
+              <span className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 italic">A collection of my creative works spanning branding, web games, and interactive experiences&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;A collection of my creative works spanning branding, web games, and interactive experiences&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</span>
             </motion.div>
           </div>
         </div>
