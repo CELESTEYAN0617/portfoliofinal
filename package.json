@@ -5,7 +5,7 @@
   "main": "backend/server.js",
   "scripts": {
     "start": "node backend/server.js",
-    "build": "cd portfolio-site && npx react-scripts build",
+    "build": "cd portfolio-site && npx --no-install ./node_modules/.bin/react-scripts build",
     "install-all": "cd backend && npm install && cd ../portfolio-site && npm install",
     "dev": "cd portfolio-site && npm start",
     "start-dev-api": "cd backend && node server.js",
