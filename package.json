@@ -12,11 +12,7 @@
     "start-dev-api": "cd backend && node server.js",
     "build-and-start": "npm run build && npm start",
     "setup-and-run": "npm run install-all && npm run build && npm start",
-    "install-and-build": "npm run install-all && npm run build",
-    "start": "node ./node_modules/react-scripts/scripts/start.js",
-    "build": "node ./node_modules/react-scripts/scripts/build.js",
-    "test": "node ./node_modules/react-scripts/scripts/test.js",
-    "eject": "node ./node_modules/react-scripts/scripts/eject.js"
+    "install-and-build": "npm run install-all && npm run build"
   },
   "author": "",
   "license": "ISC"
