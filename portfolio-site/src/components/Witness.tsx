@@ -144,7 +144,7 @@ const Witness: React.FC = () => {
           >
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/9o9zZP1ZsTY"
+              src="https://www.youtube.com/embed/4H133GpUAsI"
               title="Witness Demo Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen

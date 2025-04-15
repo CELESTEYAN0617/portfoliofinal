@@ -113,14 +113,13 @@ const OtherP: React.FC = () => {
             {/* Video/Demo Section */}
             <div className="w-full mt-6 md:mt-8">
               <div className="aspect-video w-full rounded-xl overflow-hidden">
-                <video 
-                  className="w-full h-full object-cover"
-                  controls
-                  playsInline
-                >
-                  <source src="/turkey.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/9o9zZP1ZsTY"
+                  title="Little Turkey Adventure Game Demo"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
               </div>
             </div>
           </div>
