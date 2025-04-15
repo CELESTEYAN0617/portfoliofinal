@@ -4,6 +4,7 @@
   "description": "Full stack portfolio application",
   "main": "backend/server.js",
   "scripts": {
+    "preinstall": "npm install -g npm@latest",
     "start": "node backend/server.js",
     "build": "cd portfolio-site && npx react-scripts build",
     "install-all": "cd backend && npm install && cd ../portfolio-site && npm install",
