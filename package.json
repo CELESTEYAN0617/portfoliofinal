@@ -6,13 +6,17 @@
   "scripts": {
     "preinstall": "npm install -g npm@latest",
     "start": "node backend/server.js",
-    "build": "cd portfolio-site && npx react-scripts build",
+    "build": "cd portfolio-site && npm run build",
     "install-all": "cd backend && npm install && cd ../portfolio-site && npm install",
     "dev": "cd portfolio-site && npm start",
     "start-dev-api": "cd backend && node server.js",
     "build-and-start": "npm run build && npm start",
     "setup-and-run": "npm run install-all && npm run build && npm start",
-    "install-and-build": "npm run install-all && npm run build"
+    "install-and-build": "npm run install-all && npm run build",
+    "start": "node ./node_modules/react-scripts/scripts/start.js",
+    "build": "node ./node_modules/react-scripts/scripts/build.js",
+    "test": "node ./node_modules/react-scripts/scripts/test.js",
+    "eject": "node ./node_modules/react-scripts/scripts/eject.js"
   },
   "author": "",
   "license": "ISC"
