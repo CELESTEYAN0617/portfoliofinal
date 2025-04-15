@@ -1,0 +1,13 @@
+/* Blob cursor styles */
+
+/* 全局隐藏光标 */
+* {
+  cursor: none !important;
+}
+
+/* 确保所有交互元素也隐藏光标 */
+a, button, input, [role="button"] {
+  cursor: none !important;
+}
+
+/* 自定义光标样式 */ 
