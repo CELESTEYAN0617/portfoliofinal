@@ -162,14 +162,14 @@ const Infosafe: React.FC = () => {
       
       {/* Gradient Section */}
       <motion.section 
-        className="relative w-full h-[600px] bg-gradient-to-b from-[#FFB800] via-[#F4F1EC] via-[#F4F1EC] via-[#F4F1EC] via-[#F4F1EC] to-[#F4F1EC] py-10 px-8 flex items-center justify-center overflow-hidden"
+        className="relative w-full h-[600px] bg-gradient-to-b from-[#FFB800] via-[#F4F1EC] via-[#F4F1EC] via-[#F4F1EC] via-[#F4F1EC] to-[#F4F1EC] py-10 px-4 md:px-8 flex items-center justify-center overflow-hidden"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
         {/* Mouse drawing effect */}
         <div 
-          className="absolute inset-0 cursor-crosshair z-30"
+          className="absolute inset-0 cursor-crosshair z-30 max-w-[90%] md:max-w-none mx-auto"
           onMouseMove={(e) => {
             const lastSquare = e.currentTarget.lastElementChild;
             if (lastSquare) {
@@ -237,17 +237,17 @@ const Infosafe: React.FC = () => {
               <img
                 src="/info.png"
                 alt="IN4SAFE"
-                className="w-2.2/4 mx-auto rounded-lg shadow-lg"
+                className="w-full sm:w-3/4 md:w-2/3 lg:w-2.2/4 mx-auto rounded-lg shadow-lg"
               />
             </div>
           </div>
 
           {/* Login Portal Image */}
-          <div className="flex items-end justify-center mt-20 overflow-visible relative">
+          <div className="flex items-end justify-center mt-8 md:mt-20 overflow-visible relative">
             <img
               src="/info-1.png"
               alt="IN4SAFE Login Portal"
-              className="w-[180%] rounded-lg shadow-lg absolute"
+              className="w-full sm:w-[120%] md:w-[150%] lg:w-[180%] rounded-lg shadow-lg relative md:absolute"
             />
           </div>
         </div>

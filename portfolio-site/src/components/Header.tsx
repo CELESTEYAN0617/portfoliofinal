@@ -12,10 +12,10 @@ const Header: React.FC = () => {
   };
 
   const scrollToSection = (sectionId: string) => {
-    // 如果不在首页，先导航到首页
+    
     if (window.location.pathname !== '/') {
       navigate('/');
-      // 等待页面加载完成后滚动
+      
       setTimeout(() => {
         const element = document.getElementById(sectionId);
         if (element) {
