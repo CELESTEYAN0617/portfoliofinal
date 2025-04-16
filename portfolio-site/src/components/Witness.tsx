@@ -353,7 +353,7 @@ const Witness: React.FC = () => {
                     fontSize: "clamp(1.2rem, 1.5rem, 2rem)",
                     lineHeight: "1.75rem",
                     color: "rgb(75 85 99)",
-                    marginLeft: "3rem sm:ml-4 md:ml-6",
+                    marginLeft: "6rem",
                     fontStyle: "italic"
                   }}
                 >
@@ -378,7 +378,7 @@ const Witness: React.FC = () => {
                     fontSize: "clamp(1rem, 1.25rem, 1.5rem)",
                     lineHeight: "1.75rem",
                     color: "rgb(75 85 99)",
-                    marginLeft: "3rem sm:ml-4 md:ml-6",
+                    marginLeft: "6rem",
                     fontStyle: "italic"
                   }}
                 >

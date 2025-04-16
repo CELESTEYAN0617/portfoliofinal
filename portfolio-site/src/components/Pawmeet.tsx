@@ -243,11 +243,11 @@ const Pawmeet: React.FC = () => {
             <div className="grid gap-8 sm:gap-12 md:gap-16">
               <div className="font-epilogue">
                 <h3 className="text-[6vw] sm:text-[7vw] md:text-[8vw] tracking-wide italic font-bold mb-4">AaBbCcDdEeFfGgHhIiJjKkLl</h3>
-                <p className="text-base sm:text-lg md:text-xl text-gray-600 italic ml-0 md:ml-8">Epilogue</p>
+                <p className="text-base sm:text-lg md:text-xl text-gray-600 italic ml-0 md:ml-20">Epilogue</p>
               </div>
               <div>
                 <h3 className="font-inter text-[6vw] sm:text-[7vw] md:text-[8vw] tracking-wide mb-4">AaBbCcDdEeFfGgHhIiJjKkLl</h3>
-                <p className="text-base sm:text-lg md:text-xl text-gray-600 italic ml-0 md:ml-8">Inter</p>
+                <p className="text-base sm:text-lg md:text-xl text-gray-600 italic ml-0 md:ml-20">Inter</p>
               </div>
             </div>
           </div>
