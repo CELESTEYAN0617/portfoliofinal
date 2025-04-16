@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -78,10 +79,42 @@ const Footer: React.FC = () => {
           <div className="space-y-4">
             <h3 className="text-lg sm:text-xl font-bold">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-700 hover:text-[#B2FFFF] transition-colors">Home</a></li>
-              <li><a href="#" className="text-gray-700 hover:text-[#B2FFFF] transition-colors">Projects</a></li>
-              <li><a href="#" className="text-gray-700 hover:text-[#B2FFFF] transition-colors">About</a></li>
-              <li><a href="#" className="text-gray-700 hover:text-[#B2FFFF] transition-colors">Contact</a></li>
+              <li>
+                <Link 
+                  to="/" 
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                  className="text-gray-700 hover:text-[#B2FFFF] transition-colors"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/all-projects" 
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                  className="text-gray-700 hover:text-[#B2FFFF] transition-colors"
+                >
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/resume" 
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                  className="text-gray-700 hover:text-[#B2FFFF] transition-colors"
+                >
+                  Resume
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/contact" 
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                  className="text-gray-700 hover:text-[#B2FFFF] transition-colors"
+                >
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
