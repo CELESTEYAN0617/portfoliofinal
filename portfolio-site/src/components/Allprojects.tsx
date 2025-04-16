@@ -17,7 +17,7 @@ const Allprojects: React.FC = () => {
           <h2 className="about-title text-5xl">All Projects</h2>
         </div>
 
-        <div className="grid grid-cols-3 gap-12 mt-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mt-20">
           {/* Project 1 */}
           <Link to="/projects/pawmeet" className="group">
             <div className="relative overflow-hidden rounded-lg border border-black bg-white transition-all duration-300 hover:shadow-lg">
