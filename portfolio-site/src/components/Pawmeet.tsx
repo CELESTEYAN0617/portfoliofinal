@@ -238,16 +238,16 @@ const Pawmeet: React.FC = () => {
       >
         <div className="max-w-7xl mx-auto">
           {/* Typography Section */}
-          <div className="mb-10 sm:mb-16 md:mb-20 -ml-0 md:-ml-24">
-            <div className="w-40 sm:w-60 md:w-80 h-[2px] bg-[#8BE644] mb-4 ml-0 md:ml-24 mt-4 md:mt-8"></div>
+          <div className="mb-10 sm:mb-16 md:mb-20 -ml-0 md:-ml-40">
+            <div className="w-40 sm:w-60 md:w-80 h-[2px] bg-[#8BE644] mb-4 ml-0 md:ml-8 mt-4 md:mt-8"></div>
             <div className="grid gap-8 sm:gap-12 md:gap-16">
               <div className="font-epilogue">
-                <h3 className="text-[6vw] sm:text-[7vw] md:text-[8vw] tracking-wide italic mb-4">AaBbCcDdEeFfGgHhIiJjKkLl</h3>
-                <p className="text-base sm:text-lg md:text-xl text-gray-600 italic ml-0 md:ml-24">Epilogue</p>
+                <h3 className="text-[6vw] sm:text-[7vw] md:text-[8vw] tracking-wide italic font-bold mb-4">AaBbCcDdEeFfGgHhIiJjKkLl</h3>
+                <p className="text-base sm:text-lg md:text-xl text-gray-600 italic ml-0 md:ml-8">Epilogue</p>
               </div>
               <div>
                 <h3 className="font-inter text-[6vw] sm:text-[7vw] md:text-[8vw] tracking-wide mb-4">AaBbCcDdEeFfGgHhIiJjKkLl</h3>
-                <p className="text-base sm:text-lg md:text-xl text-gray-600 italic ml-0 md:ml-24">Inter</p>
+                <p className="text-base sm:text-lg md:text-xl text-gray-600 italic ml-0 md:ml-8">Inter</p>
               </div>
             </div>
           </div>

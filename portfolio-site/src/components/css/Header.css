@@ -8,6 +8,20 @@
   src: url('/public/fonts/times new roman.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Jolly Lodger';
+  src: url('/public/fonts/JollyLodger.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mina';
+  src: url('/public/fonts/Mina.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .header {
   position: fixed;
   top: 0;

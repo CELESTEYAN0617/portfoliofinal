@@ -339,7 +339,7 @@ const Witness: React.FC = () => {
                 <h3 
                   style={{ 
                     fontFamily: "'Jolly Lodger', cursive",
-                    fontSize: "clamp(2rem, 8vw, 6rem)",
+                    fontSize: "clamp(3rem, 10vw, 8rem)",
                     letterSpacing: "0.25em",
                     marginBottom: "1rem",
                     fontStyle: "italic"
@@ -350,7 +350,7 @@ const Witness: React.FC = () => {
                 <p 
                   style={{ 
                     fontFamily: "'Jolly Lodger', cursive",
-                    fontSize: "clamp(1rem, 1.25rem, 1.5rem)",
+                    fontSize: "clamp(1.2rem, 1.5rem, 2rem)",
                     lineHeight: "1.75rem",
                     color: "rgb(75 85 99)",
                     marginLeft: "3rem sm:ml-4 md:ml-6",
@@ -361,8 +361,29 @@ const Witness: React.FC = () => {
                 </p>
               </motion.div>
               <motion.div variants={itemVariants}>
-                <h3 className="font-mina text-[clamp(2rem, 8vw, 6rem)] tracking-wide mb-4 italic">AaBbCcDdEeFfGgHhIiJjKkLl</h3>
-                <p className="text-lg sm:text-xl text-gray-600 ml-12 sm:ml-16 md:ml-24 font-mina italic">Mina</p>
+                <h3 
+                  style={{ 
+                    fontFamily: "'Mina', sans-serif",
+                    fontSize: "clamp(2rem, 8vw, 6rem)",
+                    letterSpacing: "0.25em",
+                    marginBottom: "1rem",
+                    fontStyle: "italic"
+                  }}
+                >
+                  AaBbCcDdEeFfGgHhIiJjKkLl
+                </h3>
+                <p 
+                  style={{ 
+                    fontFamily: "'Mina', sans-serif",
+                    fontSize: "clamp(1rem, 1.25rem, 1.5rem)",
+                    lineHeight: "1.75rem",
+                    color: "rgb(75 85 99)",
+                    marginLeft: "3rem sm:ml-4 md:ml-6",
+                    fontStyle: "italic"
+                  }}
+                >
+                  Mina
+                </p>
               </motion.div>
             </motion.div>
           </motion.div>
